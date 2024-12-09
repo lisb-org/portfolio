@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+
+
+        /* the global purple: #45086b */
+        /* Hero Section */
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('map.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #45086b;
+        }
+        .hero h1 {
+            font-size: 10rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 3rem;
+        }
+        .hero .btn {
+            background-color: #fff;
+            color: #45086b;
+            padding: 10px 30px;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #45086b1d;
+            z-index: 1;
+        }
+        .hero > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #fff;
+            padding: 40px 0;
+            margin: 30px 0px ;
+        }
+        .features .feature-box {
+            text-align: center;
+            position: relative;
+            background-image: url('https://via.placeholder.com/300');
+            background-size: cover;
+            background-position: center;
+            color: #45086b;
+            padding: 40px 20px;
+            border-radius: 8px;
+            height: 250px;
+        }
+        .features .feature-box h3 {
+            font-weight: bold;
+            font-size: 4rem;
+        }
+        .features .feature-box p {
+            color: #45086bbb;
+        }
+
+        /* Portfolio Section */
+        .sidehead {
+            font-size: 15rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            writing-mode: vertical-lr;
+            text-orientation: sideways;
+            text-align: relative;
+            position: absolute;
+            color: #45086b53;
+        }
+
+        .portfolio {
+            background-color: #45086b25;
+            padding: 60px 20px;
+        }
+        .portfolio h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .portfolio .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+        }
+        .portfolio .portfolio-item {
+            position: relative;
+            overflow: hidden;
+        }
+        .portfolio img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .portfolio .text-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:  #45086bac;
+            text-align: center;
+            padding: 20px;
+            color: #f0e5ff;
+            height: 100%;
+        }
+        .portfolio .text-box h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .portfolio .text-box p {
+            font-size: 1rem;
+            color: #f0e5ff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #45086b;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+
+            <h1 style="display: inline;">Lisa, </h1>
+            <p style="display: inline; font-size: 5rem;">encantada</p>
+            <p>... a Portfolio to be</p>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box" style="background-image: url('hint_locksmith.png');">
+                        <h3>O</h3>
+                        <p>on fire.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box" style="background-image: url('hint_locksmith.png');">
+                        <h3>R</h3>
+                        <p>really cool.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box" style="background-image: url('hint_locksmith.png');">
+                        <h3>G</h3>
+                        <p>great, just great.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+
+    <section class="portfolio">
+        <a style="position:relative;" href="https://anuejn.github.io/diventure/" class="btn btn-light">PLAY <br><i>Dumpster Diventure</i></a>
+        <h1 class="sidehead">LISA INGEBORG GERNER</h1>
+        <div class="container">
+            <h2></h2>
+            <div class="portfolio-grid">
+                <!-- Row 1 -->
+                <div class="portfolio-item">
+                    <img src="bananas.png" alt="bananas">
+                </div>
+                <div class="portfolio-item">
+                    <img src="cat.png" alt="cat" style="width: 400px; height: auto;">
+                </div>
+                <div class="portfolio-item text-box">
+                    <div>
+                        <h3>“If food loss and waste were a country, it would be the third biggest source of greenhouse gas emissions.”</h3>
+                        <p> - United Nations Environment Programme, 2021</p>
+                    </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="portfolio-item text-box">
+                    <div>
+                        <h3>Cuando tiras comida, <br>tiras mucho más</h3>
+                        <p>29 Sept día internacional contra el desperdicion alimentario</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="recycle.png" alt="recycle symbole" style="width: 400px; height: auto;">
+                </div>
+                <div class="portfolio-item">
+                    <img src="supermarket_cart.png" alt="supermarket cart">
+                </div>
+
+                <!-- Row 3 -->
+                <div class="portfolio-item">
+                    <img src="trashbag1.png" alt="trashbag" style="width: 400px; height: auto;">
+                </div>
+                <div class="portfolio-item text-box">
+                    <div>
+                        <h3>something</h3>
+                        <p>really really cool.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="trash.png" alt="trash">
+                </div>
+
+                <!-- Row 4 -->
+                <div class="portfolio-item text-box">
+                    <div>
+                        <h3>algo</h3>
+                        <p>muy muy chulo.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="brezel.png" alt="brezel" style="width: 400px; height: auto;">
+                </div>
+                <div class="portfolio-item">
+                    <img src="telephone.png" alt="telephone" style="width: 300px; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
