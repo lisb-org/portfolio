@@ -11,9 +11,6 @@
             font-family: 'Arial', sans-serif;
         }
 
-
-
-        /* the global purple: #45086b */
         /* Hero Section */
         .hero {
             position: relative;
@@ -24,13 +21,16 @@
             background-position: center;
             color: #45086b;
         }
+
         .hero h1 {
-            font-size: 10rem;
+            font-size: 4rem;
             font-weight: bold;
         }
+
         .hero p {
-            font-size: 3rem;
+            font-size: 2rem;
         }
+
         .hero .btn {
             background-color: #fff;
             color: #45086b;
@@ -38,6 +38,7 @@
             font-size: 1rem;
             margin-top: 20px;
         }
+
         .hero::after {
             content: "";
             position: absolute;
@@ -48,6 +49,7 @@
             background: #45086b1d;
             z-index: 1;
         }
+
         .hero > * {
             position: relative;
             z-index: 2;
@@ -57,8 +59,8 @@
         .features {
             background-color: #fff;
             padding: 40px 0;
-            margin: 30px 0px ;
         }
+
         .features .feature-box {
             text-align: center;
             position: relative;
@@ -87,45 +89,43 @@
             text-align: relative;
             position: absolute;
             color: #45086b53;
+            left: 4%;
+            z-index: -1;
         }
 
         .portfolio {
             background-color: #45086b25;
             padding: 60px 20px;
         }
+
         .portfolio h2 {
             text-align: center;
             margin-bottom: 40px;
+            color: #45086b;
         }
-        .portfolio .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0;
-        }
-        .portfolio .portfolio-item {
-            position: relative;
-            overflow: hidden;
-        }
-        .portfolio img {
+
+        .portfolio .portfolio-item img {
             width: 100%;
-            height: 100%;
+            height: auto;
             object-fit: cover;
-            display: block;
+            border-radius: 0;
         }
+
         .portfolio .text-box {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color:  #45086bac;
+            background-color: #45086bac;
             text-align: center;
             padding: 20px;
             color: #f0e5ff;
-            height: 100%;
         }
+
         .portfolio .text-box h3 {
             font-size: 1.5rem;
             font-weight: bold;
         }
+
         .portfolio .text-box p {
             font-size: 1rem;
             color: #f0e5ff;
@@ -144,17 +144,16 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-
-            <h1 style="display: inline;">Lisa, </h1>
-            <p style="display: inline; font-size: 5rem;">encantada</p>
+            <h1>Lisa, encantada</h1>
             <p>... a Portfolio to be</p>
+            <a href="#portfolio" class="btn">View My Work</a>
         </div>
     </header>
 
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-4">
                     <div class="feature-box" style="background-image: url('hint_locksmith.png');">
                         <h3>O</h3>
@@ -168,7 +167,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-box" style="background-image: url('hint_locksmith.png');">
+                    <div class="feature-box"  style="background-image: url('hint_locksmith.png');">
                         <h3>G</h3>
                         <p>great, just great.</p>
                     </div>
@@ -177,69 +176,59 @@
         </div>
     </section>
 
-    <!-- -->
     <!-- Portfolio Section -->
-    <section class="portfolio">
-        <a style="position:relative;" href="tryout.html" class="btn btn-light">GO TO <br><i>another page</i></a>
-        <a style="position:relative;" href="https://anuejn.github.io/diventure/" class="btn btn-light">PLAY <br><i>Dumpster Diventure</i></a>
-        <h1 class="sidehead">LISA INGEBORG GERNER</h1>
+    <section class="portfolio" id="portfolio">
+        <div class="sidehead">LISA INGEBORG GERNER</div>
         <div class="container">
-            <h2></h2>
-            <div class="portfolio-grid">
-                <!-- Row 1 -->
-                <div class="portfolio-item">
-                    <img src="bananas.png" alt="bananas">
+            <h2>Portfolio</h2>
+            <h2><a style="position:relative;" href="https://anuejn.github.io/diventure/" class="btn btn-light">PLAY <br><i>Dumpster Diventure</i></a></h2>
+            <div class="row g-0">
+
+                <!-- Portfolio Items -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="bananas.png" alt="bananas" class="img-fluid">
                 </div>
-                <div class="portfolio-item">
-                    <img src="cat.png" alt="cat" style="width: 400px; height: auto;">
+                <div class="col-lg-4 col-md-6">
+                    <img src="cat.png" alt="cat" class="img-fluid">
                 </div>
-                <div class="portfolio-item text-box">
+                <div class="col-lg-4 col-md-6 text-box">
                     <div>
                         <h3>“If food loss and waste were a country, it would be the third biggest source of greenhouse gas emissions.”</h3>
-                        <p> - United Nations Environment Programme, 2021</p>
+                        <p>- United Nations Environment Programme, 2021</p>
                     </div>
                 </div>
-                
-                <!-- Row 2 -->
-                <div class="portfolio-item text-box">
+                <div class="col-lg-4 col-md-6 text-box">
                     <div>
                         <h3>Cuando tiras comida, <br>tiras mucho más</h3>
-                        <p>29 Sept día internacional contra el desperdicion alimentario</p>
+                        <p>29 Sept día internacional contra el desperdicio alimentario</p>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="recycle.png" alt="recycle symbole" style="width: 400px; height: auto;">
+                <div class="col-lg-4 col-md-6">
+                    <img src="recycle.png" alt="recycle symbole" class="img-fluid">
                 </div>
-                <div class="portfolio-item">
-                    <img src="supermarket_cart.png" alt="supermarket cart">
+                <div class="col-lg-4 col-md-6">
+                    <img src="supermarket_cart.png" alt="supermarket cart" class="img-fluid">
                 </div>
-
-                <!-- Row 3 -->
-                <div class="portfolio-item">
-                    <img src="trashbag1.png" alt="trashbag" style="width: 400px; height: auto;">
+                <div class="col-lg-4 col-md-6">
+                    <img src="telephone.png" alt="phone" class="img-fluid">
                 </div>
-                <div class="portfolio-item text-box">
+                <div class="col-lg-4 col-md-6">
+                    <img src="trashbag1.png" alt="trashbag" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="trash.png" alt="trash" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <img src="trashbag2.png" alt="trashbag" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-6 text-box">
                     <div>
-                        <h3>something</h3>
-                        <p>really really cool.</p>
+                        <h3>Cuando tiras comida, <br>tiras mucho más</h3>
+                        <p>29 Sept día internacional contra el desperdicio alimentario</p>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="trash.png" alt="trash">
-                </div>
-
-                <!-- Row 4 -->
-                <div class="portfolio-item text-box">
-                    <div>
-                        <h3>algo</h3>
-                        <p>muy muy chulo.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="brezel.png" alt="brezel" style="width: 400px; height: auto;">
-                </div>
-                <div class="portfolio-item">
-                    <img src="telephone.png" alt="telephone" style="width: 300px; height: auto;">
+                <div class="col-lg-4 col-md-6">
+                    <img src="brezel.png" alt="brezel" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -249,5 +238,9 @@
     <footer>
         <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
