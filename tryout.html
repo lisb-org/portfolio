@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Hero Section */
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('map.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #45086b;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .hero .btn {
+            background-color: #fff;
+            color: #45086b;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(69, 8, 107, 0.1);
+            z-index: 1;
+        }
+        .hero > * {
+            position: relative;
+            z-index: 2;
+        }
+        .sidehead {
+            font-size: 2.5rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            writing-mode: vertical-lr;
+            text-orientation: sideways;
+            position: absolute;
+            color: #45086b53;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #45086b;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4">Lisa,</h1>
+            <p class="fs-3">encantada</p>
+            <p class="lead">... a Portfolio to be</p>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="feature-box text-center p-4 rounded" style="background-image: url('hint_locksmith.png'); background-size: cover; color: white; height: 200px;">
+                        <h3 class="display-6">O</h3>
+                        <p>on fire.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="feature-box text-center p-4 rounded" style="background-image: url('hint_locksmith.png'); background-size: cover; color: white; height: 200px;">
+                        <h3 class="display-6">R</h3>
+                        <p>really cool.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="feature-box text-center p-4 rounded" style="background-image: url('hint_locksmith.png'); background-size: cover; color: white; height: 200px;">
+                        <h3 class="display-6">G</h3>
+                        <p>great, just great.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio py-5">
+        <div class="container">
+            <h1 class="sidehead d-none d-lg-block">LISA INGEBORG GERNER</h1>
+            <a href="https://anuejn.github.io/diventure/" class="btn btn-light mb-4">PLAY <br><i>Dumpster Diventure</i></a>
+            <div class="row g-3">
+                <!-- Row 1 -->
+                <div class="col-6 col-md-4">
+                    <img src="bananas.png" alt="bananas" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="cat.png" alt="cat" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="text-box d-flex flex-column justify-content-center align-items-center bg-secondary text-white p-3 h-100">
+                        <h3 class="fs-4 text-center">“If food loss and waste were a country, it would be the third biggest source of greenhouse gas emissions.”</h3>
+                        <p class="fs-6">- United Nations Environment Programme, 2021</p>
+                    </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="text-box d-flex flex-column justify-content-center align-items-center bg-primary text-white p-3 h-100">
+                        <h3 class="fs-4 text-center">Cuando tiras comida, <br>tiras mucho más</h3>
+                        <p>29 Sept día internacional contra el desperdicion alimentario</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="recycle.png" alt="recycle" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="supermarket_cart.png" alt="supermarket cart" class="img-fluid">
+                </div>
+
+                <!-- Row 3 -->
+                <div class="col-6 col-md-4">
+                    <img src="trashbag1.png" alt="trashbag" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="text-box d-flex flex-column justify-content-center align-items-center bg-dark text-white p-3 h-100">
+                        <h3 class="fs-4">something</h3>
+                        <p>really really cool.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="trash.png" alt="trash" class="img-fluid">
+                </div>
+
+                <!-- Row 4 -->
+                <div class="col-12 col-md-4">
+                    <div class="text-box d-flex flex-column justify-content-center align-items-center bg-info text-white p-3 h-100">
+                        <h3 class="fs-4">algo</h3>
+                        <p>muy muy chulo.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="brezel.png" alt="brezel" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="telephone.png" alt="telephone" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
